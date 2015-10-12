@@ -1,0 +1,5 @@
+<tr id="<%= dom_id(name) %>">
+  <td><%= name.name %></td>
+  <td><%= link_to 'Edit', edit_name_path(name), remote: true, name: name %></td>
+  <td><%= link_to 'Destroy', name, method: :delete, data: { confirm: 'Are you sure?' }, remote: true %></td>
+</tr>
